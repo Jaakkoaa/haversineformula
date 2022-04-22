@@ -29,9 +29,9 @@ function getRadius(type) {
         return 6371000 
     } else if (type === 'mile' || type === 'MILE') {
         return 3958
-    } else if (type === 'feet' || type === 'FEET') {
+    } else if (type === 'foot' || type === 'FOOT') {
         return 20902230
-    } else if (type === 'yards' || type === 'YARDS') {
+    } else if (type === 'yard' || type === 'YARD') {
         return 6967410
     }
 }
