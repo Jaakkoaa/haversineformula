@@ -1,6 +1,8 @@
 # haversineformula
 a npm package to calculate distance between coordinates
 
+npm install haversineformula
+
 the haversineformula function takes tree variables:
 the first coordinates, the second coordinates, and the type of measurement you want.
 
