@@ -1,12 +1,12 @@
 
-function haverisineformula(start, end, type) {
+function haversineformula(start, end, type) {
      
     const lat2 = end.latitude
     const lon2 = end.longitude
     const lat1 = start.latitude
     const lon1 = start.longitude
-     
-    const radius = getRadius(type)
+    
+    radius = type ? getRadius(type) : 6371
 
     const startLatRad = radians(lat1)
     const endLatRad = radians(lat2)
@@ -28,7 +28,7 @@ function getRadius(type) {
     } else if (type === 'meter' || type === 'METER') { 
         return 6371000 
     } else if (type === 'mile' || type === 'MILE') {
-        return 6371
+        return 3958
     } else if (type === 'feet' || type === 'FEET') {
         return 20902230
     } else if (type === 'yards' || type === 'YARDS') {
@@ -37,4 +37,4 @@ function getRadius(type) {
 }
 
 
-export default haverisineformula
+module.exports = haversineformula
